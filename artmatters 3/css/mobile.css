@@ -1,0 +1,273 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+
+	width:100%;
+}
+body{
+margin:0;
+top:0;
+	height:100%;
+	width:100%;
+}
+@font-face {
+	font-family:'theLydian';
+	src:url(fonts/LydianBT-Bold.otf)
+}
+
+@font-face {
+	font-family:'theCircle';
+	src:url(fonts/circular_std_book/CircularStd-Book.otf)
+}
+
+section{
+
+
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: white;
+	padding:5px;
+
+
+}
+
+#archiveSection{
+background-image: url("../img/pointer.png");
+background-repeat: no-repeat;
+background-position: center;
+
+
+}
+
+#archiveSection img{
+	-webkit-transform: rotate(30deg);
+	  transform: rotate(30deg);
+}
+
+#logos{
+	position: relative;
+	left:35%;
+
+}
+
+.button{
+background-color: rgb( 244, 154, 193));
+
+
+}
+
+.mc-field-group{
+font-family: 'theCircle';
+
+
+}
+#mc-embedded-subscribe{
+	font-family: 'theCircle';
+}
+
+.indicates-required{
+font-family: 'theCircle';
+
+}
+
+#mc_embed_signup{
+font-family: 'theCircle';
+
+}
+.center p{
+	font-family: 'theCircle';
+	font-size: 12pt;
+	text-align: center;
+}
+
+iframe{
+	/*margin-left: 10px;*/
+}
+
+.green{
+background-color: rgb( 178, 215, 75);
+
+}
+
+.pink{
+
+  background-color: rgb( 244, 154, 193);
+}
+
+
+.text{
+
+background-color: white;
+padding:55px;
+
+}
+img{
+
+	margin: auto;
+	display: inline;
+}
+.maintext{
+
+	font-family: 'theCircle';
+	font-size: 12pt;
+	text-align: justify;
+}
+
+.highlight{
+	/*font-family: 'theCircle';*/
+	color: #FF00FF;
+
+}
+
+.under{
+
+	text-decoration: underline;
+}
+a{
+
+	text-decoration: underline;
+	color: #FF00FF;
+	font-family: 'theCircle';
+}
+
+
+div{
+/* width:100%; */
+padding-bottom:15px;
+}
+p{
+  font-family: 'theCircle';
+  font-size: 12pt;
+  text-align: justify;
+
+
+}
+
+li{
+
+	font-family: 'theCircle';
+	font-size: 12pt;
+	/*text-align: justify;*/
+	padding-bottom: 30px;
+}
+
+#contact li{
+
+	font-size: 10pt;
+}
+
+h2{
+
+	font-family: 'theCircle';
+	letter-spacing: 20px;
+	font-size: 14pt;
+	text-align: center;
+}
+
+#h2off{
+text-align: justify center;
+	/* letter-spacing: 53px; */
+}
+
+h1{
+font-size:40pt;
+margin-top: 0px;
+text-align: center;
+font-family: 'theLydian';
+outline: 1.5pt;
+color: rgb( 244, 154, 193);
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+letter-spacing: 5px;
+}
+
+.greenh{
+
+	font-size: 40pt;
+	margin-top:0px;
+	text-align: center;
+	font-family: 'theLydian';
+	outline: 1.5pt;
+	color: rgb( 178, 215, 75);
+	text-shadow:
+	-1px -1px 0 #000,
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+	letter-spacing: 5px;
+}
+
+nav{
+
+	position:fixed;
+	background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0));
+	width:100%;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+#art{
+margin-left: 150px;
+
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: -2px;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+		padding:0px;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+		border-left: 2px solid black;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+		font-family: 'theCircle';
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+#wrapper
+{
+	margin-top:80px;
+}

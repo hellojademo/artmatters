@@ -1,0 +1,536 @@
+<!-- ************************************************************************
+
+Art Matters Wesbite 2017-2018
+Jade Morgan
+
+Landing page for upcoming festival
+
+************************************************************************ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Welcome to Art Matters</title>
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <!-- Including jQuery by default -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Uncomment next two lines to include jQuery UI -->
+  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+
+  <!-- We include our own script file(s) -->
+  <script src="../js/dots.js" content="text/javascript"></script>
+    <script src="../js/simple.js" content="text/javascript"></script>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<!-- This is the disclaimer part of the site and also to get the user situated in what
+to expect as they proceed -->
+
+<body>
+
+    <canvas id="myCanvas">
+  		Sorry, your browser does not support HTML5 canvas technology.
+  	</canvas>
+
+    <nav class="center">
+            <!-- <button id="closing">Close All</button> -->
+        	<ul>
+    			<li><a href="../index.html" id="enfr">EN/FR</a></li>
+
+    		</ul>
+
+        </nav>
+        <!-- <footer>
+          <div class="slideUp" id="news-bar">
+          <marquee direction="right" scrollamount="3" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()">
+          <a href="#" class="hvr-pop">الخبر الاول</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الثاني</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الثالث</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الرابع</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الخامس</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الاول</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الثاني</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الثالث</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الرابع</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الخامس</a><a> -*- </a>
+          </marquee>
+              </div>
+        </footer> -->
+<!-- THESE ARE THE ABOUT BOXES -->
+
+
+<button id="head1" class="mainbutt"> a propos</button>
+
+
+
+<div id="about11" class="pink" class="draggable" class="ui-widget-content">
+
+
+  <button id="aboutdis" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+  <h1>À PROPOS</h1>
+
+  <section id="about1" class="text" class="maintext">
+    <p>Art Matters est un festival à but non lucratif qui célèbre et soutient le talent en développement
+logé à l'Université Concordia, dans le but de fournir aux artistes émergents des compétences,
+des outils et des connaissances pratiques</p>
+
+    <p>Art Matters se déroule en mars. Des expositions, dont les commissaires sont des étudiants,
+sont présentées parmi les trois semaines du festival, qui sont remplies de nos soirées et
+évènements signatures.</p>
+
+    <p>Art Matters est une organisation rendue possible grâce à une levée sur les frais de scolarité des
+étudiants des beaux-arts. Cela signifie qu’une fraction des frais de scolarité de tous les
+étudiants du département permet la mise en œuvre du festival. Art Matters est donc créé pour
+et par les étudiants au baccalauréat à l’université Concordia.</p>
+
+    <p>Art Matters rassemble les gens. Nous encourageons les étudiants issus de différentes pratiques
+artistiques à échanger des idées.</p>
+
+    <p>Art Matters prend en charge de nouvelles idées. Nous favorisons diverses approches
+artistiques, processus et prise de risque.</p>
+
+    <p>Art Matters ouvre un dialogue entre les étudiants et les professionnels. Nous fournissons des
+galeries et des sites comme des plateformes pour promouvoir l'art, ainsi que l'hébergement de
+conférences et d'ateliers.</p>
+
+    <p>Art Matters s'efforce de construire une communauté inclusive. Art Matters encourage
+l'accessibilité et la diversité.</p>
+
+    <p>Art Matters fait savoir que l’art est important!</p>
+
+
+
+
+  </section>
+</div>
+
+
+<!-- BOX NUMBER 2- OFFICE HOURS -->
+<div id="about2" class="green" draggable="true">
+
+
+  <button id="aboutdis2" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+  <h1>HEURES DE TRAVAIL</h1>
+
+  <section id="aboutsec2" class="text" class="maintext">
+
+<p>Si vous souhaitez vous contacter en face-à-face, contactez-nous à info@artmattersfestival.org</p>
+
+<br>
+
+<ul style="list-style-type:none">
+  <li>VA-038</li>
+  <li>1395 René Levesque Blvd. W.</li>
+  <li>Montréal, QC</li>
+  <li>+1.514.848.2424 x 5011</li>
+</ul>
+
+<a href="www.facebook.com/artmattersfestival"><p>www.facebook.com/artmattersfestival</p></a>
+
+
+
+<!--
+BOX NUMBER 3- FUNDING -->
+
+  </section>
+</div>
+
+
+<div id="about3" class="pink" draggable="true">
+
+
+  <button id="aboutdis3" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+  <h1>FINANCEMENT</h1>
+
+  <section id="aboutsec33" class="text" class="maintext">
+
+<p>Art Matters est une organisation rendue possible grâce à une levée sur les frais de scolarité des
+étudiants des beaux-arts. Si vous voulez vous retirer de la cotisation attribuée à Arts Matters,
+veuillez planifier un rendez-vous à notre bureau en envoyant un courriel à
+admin@artmattersfestival.org.</p>
+
+<p>Art Matters est financé par la levée sur les frais de scolarité, par des demandes de subventions
+écrites par les étudiants, et par des levées de fonds. Pour plus d’information par rapport au
+budget et au financement de Art Matters, veuillez contacter: admin@artmattersfestival.org.</p>
+
+
+
+
+  </section>
+</div>
+
+
+
+<!-- EXHIBITIONNNNNS -->
+
+<button id="mainex" class="mainbutt">exhibits</button>
+
+<div id="exhibit" class="green" draggable="true">
+
+
+  <button id="exhib" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+
+
+  <section id="exhibit1" class="maintext" >
+
+<p>Disponible bientôt</p>
+<br>
+  <h1>EXHIBITIONS</h1>
+  <br>
+  <p>Disponible bientôt</p>
+
+
+  </section>
+</div>
+
+
+
+<!-- CONNNNTTACT -->
+<button id="conbutton" class="mainbutt">contact</button>
+
+<div id="contact" class="pink" draggable="true">
+
+
+  <button id="con1" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+<h1>CONTACT</h1>
+
+
+  <section id="contact1" >
+
+    <ul style="list-style-type:none" class="text" class="maintext">
+      <li>Pour nous contacter rapidement  <span class="highlight">info@artmattersfestival.org</span></li>
+      <li>Coordonnatrice des communications - Diana Tapia <span class="highlight">info@artmattersfestival.org</span></li>
+      <li>Coordonnatrice des finances et de l’administration - Jordan Beaulieu: <span class="highlight">admin@artmattersfestival.org</span></li>
+      <li>Coordonnatrice des expositions - Mattia Zylak:<span class="highlight"> exhibitions@artmattersfestival.org</span></li>
+      <li>Designer graphique - Lucas Larochelle</li>
+      <li>Programmatrice web - Jade Morgan</li>
+      <li>Coordonnatrice des relations étudiantes - Tricia Middleton</li>
+      <li>Photographe d’évènement - ...</li>
+      <li>Traductrice - ...</li>
+      <li>Les opportunités pour joindre notre équipe sont en cours. Gardez un œil sur Impliquez-vous ou
+suivez-nous sur <a href="https://www.facebook.com/artmattersfestival/"><span class="highlight">Facebook </span></a> pour rester informé.</li>
+    <li>L’équipe de Art Matters est renouvelée chaque année. Si vous cherchez à contacter quelqu’un
+qui fut impliqué par le passé, contactez-nous à info@artmattersfestival.org</li>
+<a href="https://www.facebook.com/artmattersfestival/?ref=br_rs"><img src="../img/fb.png"></a>
+<a href="https://www.instagram.com/artmattersfestival/"><img src="../img/insta.png"></a>
+<a href="https://twitter.com/artmattersfest"><img src="../img/twit.png"></a>
+    </ul>
+
+
+
+  </section>
+</div>
+
+<!--
+ARCHIVE BUTTTON -->
+
+<a href="http://artmattersfestival.org/archive/"><button id="arch" class="mainbutt">archive</button></a>
+
+
+
+
+
+
+<!-- Submit button -->
+
+
+<button id="subbutton" class="mainbutt">appliquer</button>
+
+<div id="submit" class="green" draggable="true">
+
+
+  <button id="sub1" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+
+
+  <section id="submit1" >
+
+  <p class="maintext">Disponible bientôt</p>
+  <h1>APPLIQUER</h1>
+
+  <p class="maintext">Disponible bientôt...</p>
+
+
+  </section>
+</div>
+
+
+
+
+
+<!-- EVENTSSSSS -->
+
+
+<button id="evbutton" class="mainbutt">evenments</button>
+
+<div id="events" class="green" draggable="true">
+
+<h1>ÉVÉNEMENTS</h1>
+  <button id="ev1" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+
+
+  <section class="events1" >
+    <h2>7 septembre</h2>
+  <a href="https://www.facebook.com/events/507412436275197/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22page%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22page_upcoming_events_card%5C%22%2C%5C%22extra_data%5C%22%3A[]%7D]%22%2C%22has_source%22%3Atrue%7D
+  "  ><h1 class="events11" >CSU faire communautaire</h1></a>
+    <h2>11h-16h</h2>
+
+  </section>
+
+
+    <section class="events1" class >
+      <h2>Du 10 au 17 septembre</h2>
+      <a href=" https://www.facebook.com/events/299081343894178/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22page%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22page_upcoming_events_card%5C%22%2C%5C%22extra_data%5C%22%3A[]%7D]%22%2C%22has_source%22%3Atrue%7D
+      "><h1 class="events11">POP Matters at the VAV exhibtion</h1></a>
+      <h2>17h-19h</h2>
+
+    </section>
+
+
+
+  <section class="events1" >
+        <h2>14 septembre</h2>
+        <h1>POP Matters at the VAV vernissage</h1>
+        <h2>17h-19h</h2>
+
+      </section>
+
+
+
+        <section class="events1" >
+          <h2>4 octobre</h2>
+          <h1>Assemblée Générale</h1>
+
+
+        </section>
+
+
+          <section class="events1" >
+            <h2>18 octobre</h2>
+            <h1> Atelier d'application</h1>
+            <h2></h2>
+
+          </section>
+
+
+            <!-- <section class="events1" >
+              <h2>November 1st</h2>
+              <h1>CURATOR CALL-OUT ENDS</h1>
+
+
+            </section> -->
+
+
+              <!-- <section class="events1" >
+                <h2>November 1st</h2>
+                <h1>ARTIST CALL-OUT STARTS</h1>
+                <h2></h2>
+
+              </section>
+
+
+                <section class="events1" >
+                  <h2>December 1st</h2>
+                  <h1>ARTIST CALL-OUT ENDS</h1>
+
+
+                </section> -->
+
+<!--
+                  <section class="events1" >
+                    <h2>December 1-15th</h2>
+                    <h1>VOLUNTEER COORDINATOR AND TECHNICAL DIRECTORS CALL OUT</h1>
+
+
+                  </section> -->
+
+
+
+                    <!-- <section class="events1" >
+                      <h2>December 15th</h2>
+                      <h1>COPY EDITOR CALL-OUT STARTS</h1>
+
+
+                    </section> -->
+
+
+</div>
+<!-- CALLLL OUTS -->
+
+<button id="callingbutt" class="mainbutt">appels</button>
+
+<div id="callingdiv" class="pink" draggable="true">
+
+<h1>APPELS</h1>
+  <button id="calling1" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+      <section class="events1" >
+        <h2>1er octobre</h2>
+        <h1>L’appel de commisaires commence</h1>
+        <h2></h2>
+
+      </section>
+
+
+      <section class="events1" >
+              <h2>1er novembre</h2>
+              <h1> L’appel de commisaires finit</h1>
+
+
+            </section>
+
+
+             <section class="events1" >
+                <h2>1er novembre</h2>
+                <h1> L'appel lancé par l'artiste commence</h1>
+
+
+              </section>
+
+
+                <section class="events1" >
+                  <h2>1er décembre</h2>
+                  <h1>L’appel de l'artiste finit</h1>
+
+
+                </section>
+
+
+                  <section class="events1" >
+                    <h2>1-15 décembre</h2>
+                    <h1>L’appel de coordonnateur des bénévoles et directeurs techniques</h1>
+
+
+                  </section>
+
+
+                 <section class="events1" >
+                      <h2>15 décembre</h2>
+                      <h1> L’appel de l'éditeur de copie commence</h1>
+
+
+                    </section>
+
+
+</div>
+
+
+
+
+
+
+<!-- GET INVOLVED -->
+
+<button id="callbutton" class="mainbutt">impliquez-vous</button>
+
+<div id="call1" class="pink" draggable="true" class="callz">
+
+
+  <button id="callit1" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+<h1> ARTISTES et COMMISSAIRES</h1>
+
+  <section class="call" id="c" class="maintext">
+
+
+<p>Les commissaires appliquent en octobre pour organiser des expositions, travailler avec des
+pairs et des espaces professionnels d'art. En novembre, les artistes soumettent des œuvres
+d'art ou des propositions en cours au festival. Toutes les pratiques artistiques sont bienvenues,
+tous les étudiants au baccalauréat peuvent postuler</p>
+
+
+  </section>
+</div>
+
+<div id="call2" class="green" draggable="true" class="callz">
+
+<h1>EMPLOIS</h1>
+  <button id="callit2" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+  <section class="call" id="c2" class="maintext" >
+
+
+<p>Art Matters offre plusieurs emplois à base d'honoraires. Les positions en photographie, en
+vidéographie, en traduction, en édition de copie, en direction technique, en coordination de
+bénévoles et d'autres sont disponibles toute l'année. Consultez notre page <a href="https://www.facebook.com/artmattersfestival/"><span class="highlight">Facebook </span></a>  pour plus
+d'informations.</p>
+
+  </section>
+</div>
+
+
+<div id="call3" class="pink" draggable="true" class="callz">
+
+<h1>BÉNÉVOLE</h1>
+  <button id="callit3" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+  <section class="call" id="c3" class="maintext">
+
+
+    <p>De nouveaux visages sont toujours les bienvenus pour faire du bénévolat lors d'expositions et
+d'événements! Le rappel des bénévoles se produit au début du semestre d'hiver.</p>
+
+  </section>
+</div>
+
+
+<div id="call4" class="green" draggable="true" class="callz">
+<h1>CONSEIL D'ADMINISTRATION</h1>
+
+  <button id="callit4" class="cross1"><img src="../img/icon.png" style="width:30px; height:30px"></button>
+
+
+  <section class="call" id="c4" class="maintext">
+
+  <p>
+    Notre conseil d'administration détermine la façon dont le festival fonctionne, dirige ses objectifs
+    et ses initiatives, assure son fonctionnement sans heurts et s'associe à la planification des
+    événements. Pour en savoir plus ou exprimer son intérêt à vous joindre, accédez à notre
+    première assemblée générale en octobre</p>
+
+
+
+  </section>
+</div>
+
+
+
+
+
+</body>
+
+</html>
