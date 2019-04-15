@@ -1,0 +1,1729 @@
+<!-- ************************************************************************
+
+Art Matters Wesbite 2017-2018
+Jade Morgan
+
+Landing page for upcoming festival
+
+************************************************************************ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+ <meta property="og:image" content= "http://artmattersfestival.org/img/logo1.png" />
+  <meta property ="og:type" content="website" />
+  <meta property="og:url" content="http://artmattersfestival.org/" />
+  <meta property="og:description" content="Welcome to Art Matters Festival! The largest student run art festival in North America!" />
+
+  <title>Welcome to Art Matters</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <!-- Including jQuery by default -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Uncomment next two lines to include jQuery UI -->
+  <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+
+
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Begin MailChimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+  	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+  	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+
+</head>
+
+<!-- This is the disclaimer part of the site and also to get the user situated in what
+to expect as they proceed -->
+
+<body>
+
+
+
+
+
+
+        <!-- <footer>
+          <div class="slideUp" id="news-bar">
+          <marquee direction="right" scrollamount="3" behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()">
+          <a href="#" class="hvr-pop">الخبر الاول</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الثاني</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الثالث</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الرابع</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الخامس</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الاول</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الثاني</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الثالث</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الرابع</a><a> -*- </a>
+          <a href="#" class="hvr-pop">الخبر الخامس</a><a> -*- </a>
+          </marquee>
+              </div>
+        </footer> -->
+<!-- THESE ARE THE ABOUT BOXES   -->
+<!--
+<div id="wholebody" class="wrapper"> -->
+<div id="suggest" class="green  boxes" draggable="true" >
+  <button id="sug1" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+  <h1 class ="title2" id="greenh1">SUGGESTIONS</h1>
+<iframe frameborder="0" style="height:380px;width:420px;border:none;" src='https://forms.zohopublic.com/submissions/form/Suggestions/formperma/d6jkk1k50aAAdMM5Amh26977f'></iframe>
+
+
+</div>
+
+<div id="submit" class="pink boxes" draggable="true" >
+
+
+  <button id="sub1" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+
+
+
+  <section id="submit1" >
+
+
+  <h1 >SUBMIT</h1>
+
+<p class="maintext"> The artist and curator callouts are now closed.</p>
+
+  <!-- <p class="maintext">Coming Soon</p> -->
+<!-- <br>
+  <a href="html/submit.html"><h2>Curator Submission</h2></a>
+  <br>
+  <a href="html/artist.html"><h2>Artist Submission</h2></a> -->
+
+  </section>
+
+</div>
+</div>
+<nav class="langButton">
+<a href="html/french.html" class="black">EN/FR</a>
+</nav>
+
+<button id="closeall" class="mainbutt2">CLOSE ALL</button>
+<div class = "parent">
+
+<button id="head1" class="mainbutt">ABOUT</button>
+<button id="mainex" class="mainbutt">EXHIBITIONS</button>
+<button id="evbutton" class="mainbutt">EVENTS</button>
+<button id="callbutton" class="mainbutt">GET INVOLVED</button>
+<button id="subbutton" class="mainbutt">SUBMIT</button>
+<a href="http://artmattersfestival.org/archive/"><button id="arch" class="mainbutt">ARCHIVE</button></a>
+<button id="callingbutt" class="mainbutt">CALL OUTS</button>
+<button id="conbutton" class="mainbutt">CONTACT</button>
+  <button id="mapbutton" class="mainbutt">MAP</button>
+    <button id="calenbutton" class="mainbutt">CALENDAR</button>
+
+    <canvas id="myDrawingCanvas">
+      Sorry, your browser does not support HTML5 canvas technology.
+
+
+    </canvas>
+<canvas id="myCanvas">
+  Sorry, your browser does not support HTML5 canvas technology.
+
+</canvas>
+</div>
+
+
+
+
+<div id="about" class="pink boxes" class="draggable" class="ui-widget-content" >
+
+
+  <button id="aboutdis" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+
+  <h1 class ="title">ABOUT</h1>
+
+  <section id="about1" class="text" class="maintext">
+    <p>Art Matters is a non-profit festival that celebrates and supports the developing talent housed at
+Concordia University, with the aim of providing emerging artists with practical skills, tools, and
+knowledge.</p>
+
+    <p>Art Matters takes place in March. Exhibitions curated by students are spread out over three
+weeks, punctuated by our signature parties and events.</p>
+
+    <p>Art Matters is a fee-levy organization. That means a fraction of all students' tuition allows the
+festival to take place. Art Matters is created by and for undergraduate Concordia University
+students.</p>
+
+    <p>Art Matters gets people together. We encourage students from different artistic practices to
+exchange ideas.</p>
+
+    <p>Art Matters supports new ideas. We promote diverse artistic approaches, processes, and
+risk-taking.</p>
+
+    <p>Art Matters starts a dialogue between students and professionals. We provide galleries and
+venues as platforms to promote artwork, as well as hosting speakers and workshops.</p>
+
+    <p>Art Matters strives to build an inclusive community. Art Matters encourages accessibility and
+diversity.</p>
+
+    <p>Art Matters makes it known that Art Matters!</p>
+
+
+
+<a href="https://drive.google.com/file/d/1ms5mtTCzeNHWl0W0CFsRtVDgibjJB4ql/view"><p class="highlight">Check out our catalouge!</p></a>
+<button id="infoup" class="maintext">MORE INFO</button>
+  </section>
+</div>
+
+
+<!-- BOX NUMBER 2- OFFICE HOURS -->
+<div id="about2" class="green boxes" draggable="true" >
+
+
+  <button id="aboutdis2" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+
+  <h1 class="title2" id="gh1">OFFICE HOURS</h1>
+
+  <section id="aboutsec2" class="text" class="maintext">
+
+<p>If you'd like to get in touch face-to-face, please contact us at info@artmattersfestival.org</p>
+
+
+
+<ul style="list-style-type:none">
+  <li>VA-038</li>
+  <li>1395 René Levesque Blvd. W.</li>
+  <li>Montréal, QC</li>
+  <li>+1.514.848.2424 x 5011</li>
+</ul>
+
+<a href="www.facebook.com/artmattersfestival"><p>www.facebook.com/artmattersfestival</p></a>
+
+
+
+<!--
+BOX NUMBER 3- FUNDING -->
+
+  </section>
+</div>
+
+
+<div id="about3" class="pink boxes" draggable="true" >
+
+
+  <button id="aboutdis3" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+
+  <h1 class=" title9">FUNDING</h1>
+
+  <section id="aboutsec3" class="text" class="maintext">
+
+<p>Art Matters is a fee-levy organization. In order to opt out, please arrange a drop-in at our office
+through admin@artmattersfestival.org.</p>
+
+<p>Art Matters is funded by fee-levies, student-written grants, and fundraising. For more information
+about Art Matters' budget or funds, please contact: admin@artmattersfestival.org</p>
+
+
+
+
+  </section>
+</div>
+
+<div id="info" class="pink boxes" draggable="true">
+
+
+  <button id="info1" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+<section>
+<img src="img/artmatters.png" style="width:1000px;height:500px;">
+</section>
+</div>
+
+
+
+<!-- EXHIBITIONNNNNS -->
+<!--
+<button id="mainex" class="mainbutt">exhibits</button> -->
+
+<div id="exhibit" class="green boxes" draggable="true">
+
+
+  <button id="exhib" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+
+
+
+  <section id="exhibit1" class="maintext" >
+
+<p>Coming Soon</p>
+<br>
+  <h1 id="gh2">EXHIBITIONS</h1>
+  <br>
+  <p>Coming Soon</p>
+
+
+  </section>
+</div>
+
+
+
+<!-- CONNNNTTACT -->
+<!-- <button id="conbutton" class="mainbutt">contact</button> -->
+
+<div id="contact" class="pink boxes" draggable="true" >
+
+
+  <button id="con1" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+<h1 class="title82">CONTACT</h1>
+
+
+  <div id="contact1" >
+
+    <ul style="list-style-type:none" >
+      <li>Get in touch at <span class="highlight">info@artmattersfestival.org</span></li>
+      <li>Outreach Coordinator - Diana Tapia: <span class="highlight">info@artmattersfestival.org</span></li>
+      <li>Admin and Financial Coordinator - Jordan Beaulieu: <span class="highlight">admin@artmattersfestival.org</span></li>
+      <li>Exhibitions Coordinator - Mattia Zylak:<span class="highlight"> exhibitions@artmattersfestival.org</span></li>
+      <li>Graphic Designer - Lucas LaRochelle</li>
+      <li>Web Programmer - Jade Morgan</li>
+      <li>Student Relations Coordinator - Tricia Middleton</li>
+      <li>Events Photographer - Raphaël Sandler</li>
+      <li>Translator - Stéfanie Belleu</li>
+      <li>BoD Chair -  Clara Micheau <span class="highlight"> board@artmattersfestival.org</span></li>
+      <li class="just">Opportunities to join our team are on their way. Keep an eye out on the Get Involved page or
+follow us on <a href="https://www.facebook.com/artmattersfestival/"><span class="highlight">Facebook </span></a>to stay in the loop.</li>
+    <li class="just">Art Matters' staff is renewed every year. If you seek to contact someone previously involved, ask
+us at info@artmattersfestival.org</li>
+<!-- <div id="listed" > -->
+
+</ul>
+
+
+<div class ="social_icons">
+<a href="https://www.facebook.com/artmattersfestival/?ref=br_rs"><img class="list" src="img/fb.png"></a>
+<a href="https://www.instagram.com/artmattersfestival/"><img src="img/insta.png"></a>
+<a href="https://twitter.com/artmattersfest"><img src="img/twit.png"></a>
+<a href="https://www.flickr.com/people/151451443@N08/"><img src="img/flicker.jpg" height="47" width="47"></a>
+<a href="https://vimeo.com/artmattersfestival"><img src="img/vimeo.png" height="47" width="47"></a>
+<img id="opensub"src="img/envelope.png"  height="47" width="47">
+</div>
+
+</div>
+
+    <!-- </ul>
+iv id="listed" class="text" class="maintext">
+    <a href="https://www.facebook.com/artmattersfestival/?ref=br_rs"><img class="list" src="img/fb.png"></a>
+    <a href="https://www.instagram.com/artmattersfestival/"><img src="img/insta.png"></a>
+    <a href="https://twitter.com/artmattersfest"><img src="img/twit.png"></a>
+    </div> -->
+
+
+  <!-- </div> -->
+</div>
+
+
+
+<div class="green boxes" id="subscribed" draggable="true" style ="position:absolute; z-index:200;" >
+  <button id="subscribebutt" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+    <h1 class="greenh">SUBSCRIBE TO OUR MAILING LIST</h1>
+  <section id="about1" class="text" class="maintext">
+
+<div id="mc_embed_signup" style = "margin-left:20%; width:60%;">
+<form action="https://artmattersfestival.us17.list-manage.com/subscribe/post?u=4c93ab6904be83b7409378263&amp;id=66222c3916" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Last Name </label>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4c93ab6904be83b7409378263_66222c3916" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+</section>
+</div>
+<!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script> -->
+<script type='text/javascript' src='js/mc-validate.js'></script>
+<script type='text/javascript'>
+(function($) {
+  window.fnames = new Array();
+  window.ftypes = new Array();
+  fnames[0]='EMAIL';
+  ftypes[0]='email';
+  fnames[1]='FNAME';
+  ftypes[1]='text';
+  fnames[2]='LNAME';
+  ftypes[2]='text';
+}(jQuery));
+  var $mcj = jQuery;
+</script>
+<!--
+ARCHIVE BUTTTON -->
+
+<!-- <a href="http://artmattersfestival.org/archive/"><button id="arch" class="mainbutt">archive</button></a> -->
+
+
+
+
+
+
+<!-- Submit button -->
+
+<!--
+<button id="subbutton" class="mainbutt">submit</button> -->
+
+
+
+
+
+
+<!-- EVENTSSSSS -->
+
+
+<!-- <button id="evbutton" class="mainbutt">events</button> -->
+
+<div id="events" class="green boxes" draggable="true" >
+
+<h1 class="title4" id="gh3">EVENTS</h1>
+  <button id="ev1" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+  <section class="events1" >
+    <h2>April 6th</h2>
+    <a href="https://www.facebook.com/events/1704465159647706/">
+    <h1 id="gh8">CLOSING PARTY</h1></a>
+
+  </section>
+
+  <section class="events1" >
+    <h2>March 13th</h2>
+    <a href="https://www.facebook.com/events/177922362933925/">
+    <h1 id="gh8">CYBERSECURITY & GEEK GIRLS</h1></a>
+
+  </section>
+
+  <section class="events1" >
+    <h2>Febuary 8th</h2>
+    <a href="https://www.facebook.com/events/1135291796607527/">
+    <h1 id="gh8">CELLS: A COMMUNITY CONVERSATION</h1></a>
+
+  </section>
+
+    <section class="events1" >
+      <h2>Febuary 5th</h2>
+      <a href="https://www.facebook.com/events/541556802875617/">
+      <h1 id="gh8">VOLUNTEER CALLOUT</h1></a>
+
+    </section>
+
+
+  <section class="events1" >
+    <h2>Febuary 1st</h2>
+    <a href="https://www.facebook.com/events/323652004794923/">
+    <h1 id="gh8">CAN YOU KEEP A SECRET?</h1></a>
+
+  </section>
+
+            <section class="events1" >
+              <h2>October 19th</h2>
+              <a href="https://www.facebook.com/events/147631825840731/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22messaging%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22attachment%5C%22%2C%5C%22extra_data%5C%22%3A%7B%7D%7D]%22%7D">
+                <h1 id="gh8">APPLICATION WORKSHOP</h1></a>
+                <a href="https://www.flickr.com/photos/151451443@N08/sets/72157686353998332/with/23948559948/">
+                  <h2>PHOTOS</h2></a>
+              <h2></h2>
+
+            </section>
+
+
+            <section class="events1" >
+              <h2>September 27th</h2>
+              <a href="https://www.facebook.com/events/115466709128433/?__mref=mb">
+                <h1 id="gh7">GENERAL MEETING</h1></a>
+              <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vNEl2ZjR2OC13UVU/view"><h2>GM Presentation</h2></a>
+              <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vOFRoMEdfOGlhSWc/view"><h2>GM Minutes</h2></a>
+
+            </section>
+
+            <section class="events1" >
+                <h2>September 14th</h2>
+                <h1 id="gh16">POP MATTERS AT THE VAV VERNISSAGE</h1>
+                <h2>17h-19h</h2>
+                <a href="https://www.flickr.com/photos/151451443@N08/sets/72157689286190305">
+                  <h2>PHOTOS</h2></a>
+
+              </section>
+
+              <section class="events1" class >
+                <h2>September 10-17</h2>
+                <a href=" https://www.facebook.com/events/299081343894178/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22page%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22page_upcoming_events_card%5C%22%2C%5C%22extra_data%5C%22%3A[]%7D]%22%2C%22has_source%22%3Atrue%7D
+                "><h1 class="events11" id="gh5">POP MATTERS AT THE VAV EXHIBITION</h1></a>
+
+                <h2>17h-19h</h2>
+                <a href="https://www.flickr.com/photos/151451443@N08/sets/72157686105747341">
+                  <h2>PHOTOS</h2></a>
+
+              </section>
+
+  <section class="events1" >
+    <h2>September 7th</h2>
+  <a href="https://www.facebook.com/events/507412436275197/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22page%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22page_upcoming_events_card%5C%22%2C%5C%22extra_data%5C%22%3A[]%7D]%22%2C%22has_source%22%3Atrue%7D
+  "  ><h1 class="events11" id="gh4">CSU STREET FAIR</h1></a>
+    <h2>11h-16h</h2>
+
+  </section>
+
+
+</div>
+<!-- CALLLL OUTS -->
+
+<!-- <button id="callingbutt" class="mainbutt">call outs</button> -->
+
+<div id="callingdiv" class="pink boxes" draggable="true" >
+
+<h1 class="title7">CALL OUTS</h1>
+  <button id="calling1" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+
+  <section class="events1" >
+
+
+    <h1 id="gh12">COORDINATOR CALL OUT </h1></a>
+    <a href="https://drive.google.com/file/d/1Glec1vLZPyIVXAc0qWP05opKeUSvP7CH/view"><h2>More Info</h2></a>
+
+  </section>
+
+
+  <section class="events1" >
+    <h2>Feb 14 - 24</h2>
+    <a href="https://www.facebook.com/events/351491478589986/">
+    <h1 id="gh12">CLOSING PARTY CALL-OUT </h1></a>
+    <a href="https://drive.google.com/file/d/13xFfpIJzxODSVXpHfMomNWUvaoocxaaM/view"><h2>More Info</h2></a>
+
+  </section>
+
+
+  <section class="events1" >
+       <h2>JANUARY</h2>
+       <a href="https://www.facebook.com/events/541556802875617/">
+         <h1 id="gh15">VOLUNTEERS CALL-OUT</h1></a>
+
+
+     </section>
+
+     <section class="events1" >
+       <h2>FALL SEMESTER</h2>
+       <h1 id="gh14">JOBS CALL-OUT</h1>
+       <a href="https://www.facebook.com/events/330167894121336/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22messaging%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22attachment%5C%22%2C%5C%22extra_data%5C%22%3A%7B%7D%7D]%22%7D">
+         <h2>Board of Directors Chair</h2></a>
+         <a href="https://drive.google.com/file/d/1FHUt9-C2V4vP9usDb38zu3cnzegJIf5h/view">
+           <h2>Art Matters is Hiring!</h2>
+     </a>
+     </section>
+
+     <section class="events1" >
+        <h2>NOV 1ST- DEC 1ST</h2>
+        <h1 id="gh13">ARTIST CALL-OUT</h1>
+        <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0veFpNaW04MmZPa2M/view"><h2>Anonymity Tips</h2></a>
+        <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vT29UUENHd3B3NHc/view"><h2>More Info</h2></a>
+
+      </section>
+
+      <section class="events1" >
+        <h2>OCT 1ST-NOV 1ST</h2>
+        <a href="https://www.facebook.com/events/297687367374344/?acontext=%7B%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22messaging%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22attachment%5C%22%2C%5C%22extra_data%5C%22%3A%7B%7D%7D]%22%7D">
+        <h1 id="gh12">CURATOR CALL-OUT </h1></a>
+        <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vT1FyUDdqRXFGaHM/view"><h2>More Info</h2></a>
+
+      </section>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-- GET INVOLVED -->
+
+<!-- <button id="callbutton" class="mainbutt">get involved</button> -->
+
+<div id="call1" class="pink boxes" draggable="true" class="callz">
+
+
+  <button id="callit1" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+<h1 class="title3"> ARTISTS AND CURATORS</h1>
+
+  <section class="call" id="c" class="maintext">
+
+
+<p>Curators apply in October to organize exhibitions, work with peer artists and professional art
+spaces. In November, artists submit artworks or in-progress proposals to the festival. All artistic
+practices are welcomed, all undergraduate students may apply.</p>
+<div id="ac">
+  <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vT1FyUDdqRXFGaHM/view"><h2>Curator-More Info</h2></a>
+  <a href="https://drive.google.com/file/d/1GD_yYB1JxVuiRsFDDa-6q3TExzRMego8/view"><h2>Curator Guidebook</h2></a>
+  <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vT29UUENHd3B3NHc/view"><h2>Artists-More Info</h2></a>
+
+</div>
+
+  </section>
+</div>
+
+<div id="call2" class="green boxes" draggable="true" class="callz" >
+<button id="callit2" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+<h1 class="title14" id="gh20">JOBS</h1>
+
+
+
+  <section class="call" id="c2" class="maintext" >
+
+
+<p>Art Matters offers several honorarium-based jobs to undergrads. Positions in photography,
+videography, translation, copy editing, technical direction, volunteer coordination and more are
+made available year-round. Check our <a href="https://www.facebook.com/artmattersfestival/"><span class="highlight">Facebook </span></a> page for more info.</p>
+
+  </section>
+</div>
+
+
+<div id="call3" class="pink boxes" draggable="true" class="callz" >
+  <button id="callit3" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+<h1 class="title9">VOLUNTEERS</h1>
+
+
+
+  <section class="call" id="c3" class="maintext">
+
+
+    <p>New faces are always welcomed to volunteer at exhibitions and events! The call-out for
+volunteers occurs early in the Winter semester.</p>
+
+
+  </section>
+</div>
+
+
+<div id="call4" class="green boxes" draggable="true" class="callz" >
+    <button id="callit4" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+<h1 class="title33" id="gh19">BOARD OF DIRECTORS</h1>
+
+
+
+
+  <section class="call" id="c4" class="maintext">
+
+  <p>
+Our board determines how the festival operates, directs its goals and initiatives, ensures that it
+runs smoothly, and joins in the fun of planning events. To learn more or express interest in
+joining, come to our first General Meeting in October.</p>
+<!-- <div id="gm">
+<a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vNEl2ZjR2OC13UVU/view"><h2>GM Presentation</h2></a>
+<a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vOFRoMEdfOGlhSWc/view"><h2>GM Minutes</h2></a>
+<a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vODV0end3OFZzQXM/view"><h2>Art Matters Bylaws 2017</h2></a>
+</div> -->
+
+
+  </section>
+</div>
+
+
+<div id="gov" class="green boxes" draggable="true" class="callz" >
+    <button id="govb" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+<h1 class="title33" id="gh21">GOVERNANCE DOCUMENTS</h1>
+
+
+
+
+  <section class="call" id="govsec" class="maintext">
+
+
+<ul  style="list-style-type:none" id="list">
+
+<li> <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vNEl2ZjR2OC13UVU/view"><h2>GM Presentation</h2></a></li>
+<li> <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vOFRoMEdfOGlhSWc/view"><h2>GM Minutes</h2></a></li>
+<li> <a href="https://drive.google.com/file/d/0B2Mp9yfTDO0vODV0end3OFZzQXM/view"><h2>Art Matters Bylaws 2017</h2></a></li>
+<li> <a href="https://drive.google.com/file/d/1LS5o4466WPpCzbPcxaVJsuI2FDWfNgl2/view"><h2>Art Matters Policy 2017</h2></a></li>
+
+</ul>
+
+
+  </section>
+
+
+
+
+</div>
+<!--box one -->
+<div class="ex1pic bottompic"  >
+<span><img src="img/Conductivity.jpg" class="pics"  draggable="true"></span>
+</div>
+
+<div class="ex1pic leftpic">
+<img src="img/MoodMap-04.png" class="pics"  class="rightpic" draggable="true">
+</div>
+
+
+<!--box 2 pics-->
+
+<div class="ex2pic pic2">
+<img src="img/blueprint1.jpg" class="pics"  class="rightpic" draggable="true">
+</div>
+
+<div class="ex2pic pic1">
+<img src="img/blueprint2.jpg" class="pics" class="bottompic" draggable="true">
+</div>
+
+<!--box three pics-->
+
+<div class="ex3pic pic3"  >
+<span><img src="img/tender1.jpg" class="pics"  draggable="true"></span>
+</div>
+
+<div class="ex3pic bottompic">
+<img src="img/tender2.JPG" class="pics"  class="rightpic" draggable="true">
+</div>
+
+<!-- box 4 -->
+
+
+<div class="ex4pic pic1"  >
+<span><img src="img/book1.JPG" class="pics"  draggable="true"></span>
+</div>
+
+<div class="ex4pic pic2">
+<img src="img/book2.JPG" class="pics"  class="rightpic" draggable="true">
+</div>
+
+
+<!--box five-->
+ <div class="ex5pic bottompic"  >
+<span><img src="img/myth1.jpg" class="pics"  draggable="true"></span>
+</div>
+
+<div class="ex5pic pic2">
+<img src="img/myth2.JPG" class="pics"  class="rightpic" draggable="true">
+</div>
+
+
+
+<!--box six-->
+<div class="ex6pic pic1"  >
+<span><img src="img/it1.png" style="width:500px; height:500px " class="pics"  draggable="true"></span>
+</div>
+
+<div class="ex6pic pic2">
+<img src="img/it2.jpg" class="pics"  class="rightpic" draggable="true">
+</div>
+
+
+<!--box seven-->
+
+<div class="ex7pic pic2"  >
+<span><img src="img/out1.jpg" class="pics"  draggable="true"></span>
+</div>
+
+<div class="ex7pic bottompic">
+<img src="img/out2.jpg" class="pics"  class="rightpic" draggable="true">
+</div>
+
+
+
+<!--box eight-->
+
+
+<div class="ex8pic pic3">
+<img src="img/sink1.jpg" class="pics" class="bottompic" draggable="true">
+</div>
+
+<!--box nine-->
+<div class="ex9pic pic1"  >
+<span><img src="img/crush1.png" class="pics"  draggable="true"></span>
+</div>
+
+<div class="ex9pic rightpic">
+<img src="img/crush2.jpg" class="pics"  class="rightpic" draggable="true">
+</div>
+
+
+<!--box 10-->
+<div class="ex10pic pic1"  >
+<span><img src="img/ped1.jpg" class="pics"  draggable="true"></span>
+</div>
+
+<div class="ex10pic pic2">
+<img src="img/ped2.png" class="pics"  class="rightpic" draggable="true">
+</div>
+
+
+
+
+
+
+
+<!--EXHIBTIONS BOXES-->
+<div class = "outerEx" class="boxes">
+
+
+<div id="ex1" class="pink boxes" draggable="true" class="callz" >
+  <button id="ex1b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="title9">(Dis)CONNECT</h1>
+ <section class="exh" id="e1" class="maintext">
+    <div class ="excol1">
+      <p>
+By drawing from neuroscience, biology, and computation science, seven artists translate a series of divergent fields into visual form, thereby actively opening a dialogue between the artist and the viewer. (Dis)CONNECT, a Nuit Blanche (re)MIX exhibition, features the works of interdisciplinary-based artists who aim to bridge the divide between contemporary art and the public. Though seemingly antithetical in their relationship, the artists use science and technology in their respective mediums to come together in pursuit of creating and strengthening connections with the public. By giving ephemeral experience material form, information is re-imagined, re-interpreted, and re-envisioned through the artistic lens, creating an interactive space for creativity and dialogue.
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curators</h4>
+        <h5>Diane (Hau Yu) Wong</h4>
+          <h5>Kimberly Glassman</h5>
+          <h5>Hannah Simone Braithwaite</h5>
+
+
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Joffré Roy-Beauegard </h5>
+            <span class="work">The Scientific Chagrin</span>
+
+            <h5>Sarah Da Silva Marquie</h5>
+            <span class="work"> Victorian Embroidery Simulator</span>
+
+            <h5>Diana Lazzaro (Gar)</h5>
+            <span class="work"> Synapse</span>
+
+            <h5>Matthew Halpenny</h5>
+            <span class="work">Conductivity Gloves</span>
+
+            <h5>Gabrielle Marin</h5>
+            <span class="work">Bodies</span>
+
+            <h5>Timothy Thomasson & Owen Coolidge</h5>
+             <span class="work">Mood Map</span>
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 3</h5>
+      <h5>19h - 1h</h5>
+      <br>
+      <!-- <h4>Exhibiton Running Time</h4>
+      <h5>March 5th - March 17th</h5> -->
+      <!-- <br>
+      <h4>Opening Hours<h4/>
+      <h5>M-F 9am-10pm</h5>
+      <h5>S-S 12pm-1pm</h5>
+      <br> -->
+      <h4 class="extitle">Location</h4>
+      <h5>Espace POP</h5>
+      <h5>5587 av. du Parc</h5>
+      <br>
+      <h4 class="extitle">Collaborators</h4>
+    <a href="https://www.montrealenlumiere.com">  <h5 class="highlight">Nuit Blanche</h5></a>
+    </div>
+</section>
+</div>
+
+
+<!--box two -->
+
+
+
+
+<div id="ex2" class="green boxes" draggable="true" class="callz" >
+  <button id="ex2b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="gh1">BLUEPRINTS</h1>
+ <section class="exh " id="e2" >
+    <div class ="excol1">
+      <p>
+        The relationship between the artist and their work is directly guided by and linked with the passage of time. It is impossible to set an exact point where a tangible material becomes art. This process of transformation occurs on an individual basis unique to the artist; a performance guiding a material object into something of its own that is then characterized as art. The beginning and end of the piece are events that will forever remain in flux: an ambiguous timeline.
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curators</h4>
+        <h5>Alexia McKindsey</h5>
+        <h5>Jose Guillermo Garcia Sierra</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Guillaume Saur</h5>
+            <span class="work"> In May 2016</span>
+
+            <h5>Carlo Polidoro Lopez</h5>
+            <span class="work">11 Varas</span>
+
+            <h5>Mel Arsenault</h5>
+            <span class="work">LAB Series</span>
+
+            <h5>Laurence Thériault-Lainé</h5>
+            <span class="work">Muse</span>
+
+            <h5>Maggy Hamel-Metsos</h5>
+            <span class="work">Images Stuck in My Throat</span>
+
+            <h5> Laura Simard-Lemaire</h5>
+            <span class="work">Nature Morte</span>
+
+            <h5>Claude Labrèche-Lemay</h5>
+            <span class="work">Anchored in the Process</span>
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 7</h5>
+      <h5>18h - 21h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 5 - Mar 16</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>M-F 9h - 21h</h5>
+
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>VAV Gallery</h5>
+      <h5> 1395 boul. Rene Levesque O. </h5>
+
+      <h4>Collaborators</h4>
+      <a href="http://www.artsouterrain.com/"><h5 class="highlight">Festival Art Souterrain</h5></a>
+    </div>
+</section>
+</div>
+
+
+<!-- box number 3-->
+
+
+
+
+<div id="ex3" class="pink boxes" draggable="true" class="callz">
+  <button id="ex3b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="title9">Tender Teeth</h1>
+ <section class="exh" id="e3" class="maintext">
+    <div class ="excol1">
+      <p>"Tense and tenuous</p>
+      <p>grow from the same root</p>
+      <br>
+      <p>as does tender</p>
+      <p>in its several guises:</p>
+      <br>
+      <p>the sour grass flower</p>
+      <p>the yellow moth."</p>
+      <br>
+
+      <p><span class="tilt">And</span> - Rae Armantrout</p>
+  <p>
+Softness is often found in organic materials: fibres, furs, foliage and flesh. It is malleable and adaptable, offering comfort and warmth. Softness is sensitive rather than probing -- it is inclined to respond to external forces. Soft work is often handmade; it can be sentimental and inspire feelings of fondness. Yet, in its delicate nature, it is prone to degrade.
+
+  </p>
+
+
+<p>
+  Tender Teeth draws together artwork that expands on notions of softness: quaint, decorative and whimsical works reveal qualities of hazard, excess and decay. The artists in this show explore softness in its ambiguities, reflecting the ambivalent emotions that arise when caring for oneself, one's communities and the surrounding environment.
+
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curator</h4>
+        <h5>Catherine McRae Finnegan</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Chris Shimek</h5>
+            <span class="work">Soft Boys</span>
+
+            <h5>Emilie Usher</h5>
+            <span class="work">Nectar Season</span>
+
+            <h5>Florence Yee</h5>
+            <span class="work">New Fortitude III</span>
+
+            <h5>Hea Kim</h5>
+            <span class="work">I thought I was following the clouds but the clouds are following me</span>
+            <h5>Hea Kim</h5>
+            <span class="work">You are in the Islands</span>
+
+            <h5>Laura Douglas</h5>
+            <span class="work">Seed Quilt</span>
+
+            <h5>Lucia Vergel</h5>
+            <span class="work">Traces of Reality</span>
+
+            <h5>Nix Burox</h5>
+            <span class="work"> Blanket Fever</span>
+
+            <h5>Performance by <span class="tilt">Willow</span> an interdisciplinary group consisting of dancers Amber Downie-Back and Tamar Tabori, and musicians Angus Gaffney and Eliot Roby.
+            </h5>
+
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 8</h5>
+      <h5>19h - 21h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 6 - Mar 17</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>M-Su 14h - 20h</h5>
+
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>Mainline Gallery</h5>
+      <h5>3905 boul. St Laurent</h5>
+    </div>
+</section>
+</div>
+
+
+<!--BOX FOUR-->
+
+
+<div id="ex4" class="green boxes" draggable="true" class="callz" >
+  <button id="ex4b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="gh1">bookworks</h1>
+ <section class="exh" id="e4" class="maintext">
+    <div class ="excol1">
+      <p>
+From the twentieth century onward, the book as an art form has carved a place of its own. Not an art book (collected reproductions of artworks) nor a book on art (critical writings on the subject), artist books are artworks in themselves. However, it is a disservice to artist books to think of them solely in the traditional codex form. Emerging along with and due to conceptual art, the artist book sits boldly at the juncture of art, documentation, and literature; they are singular objects in materiality and in conception. bookworks surveys the current climate of the artist book in the Concordia arts community, brought together by the qualities and attributes of books, rather than by the subject they address. These works carry their meaning through aspects that drift away from customary methods, requiring a different kind of reading, and exemplify the fraught history of defining what makes a book.
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curator</h4>
+        <h5>Maia Céleste Donnelly</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Eve Roy</h5>
+            <span class="work">Four Altars for a Prisoner/Quatre Autels pour un Prisonnier</span>
+
+            <h5>Andrea Cormier</h5>
+            <span class="work">Memory Chambers</span>
+
+            <h5>Le Lin</h5>
+            <span class="work">don't conceal or reveal me</span>
+
+            <h5>Alex Apostolidis</h5>
+            <span class="work">nineteen_eight</span>
+
+            <h5>Tanita Rose Sawchuk</h5>
+            <span class="work">819 Fort</span>
+
+
+              <h5>Guillaume Bégin</h5>
+              <span class="work">Palimpsest</span>
+
+                <h5>Marie Cordey</h5>
+                <span class="work">Variations sur un même thème</span>
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 9</h5>
+      <h5>18h - 20h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 3 - Mar 17</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>Th - Su 14h - 19h</h5>
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>Mile-End Gallery</h5>
+      <h5>5345 av. du Parc</h5>
+    </div>
+</section>
+</div>
+
+
+<!--BOX FIVE-->
+
+
+
+ <div id="ex5" class="green boxes" draggable="true" class="callz">
+  <button id="ex5b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="gh1">Myth Dealing</h1>
+ <section class="exh" id="e5" class="maintext">
+    <div class ="excol1">
+      <p class="tilt">
+        Myth dealing is essential. Myths aren’t just a narrative you can identify with, they’re meant to
+        mobilize. They’re a powerful emotional bond.
+</p>
+
+<p>Sylvère Lotringer, as quoted in Chris Kraus, After Kathy Acker.</p>
+
+<p>Craft carries with it considerations of time, (feminized) labour and aesthetic hierarchies,
+but it has also long been associated with mythology and storytelling. Narratives, whether true or false, are constructed painstakingly; works in craft media connote similar ideas of carefulness and repetition. Like craft, myths have to be repeated in order to stick.
+Ideas of truth sharing and teaching are a familiar function of stories and myths. The
+construction of personal myths has the power to connect, subvert or reinvent broader, persisting narratives in productive and destabilizing ways. In this exhibition, works in diverse media
+approach notions of craft and narration—branching off of enduring myths and generating new
+ones.
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curator</h4>
+        <h5>Maggie Mills</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Elizabeth Eugène</h5>
+            <span class="work">Blanc des champs</span>
+
+            <h5>Zeke Best Rothfels</h5>
+              <span class="work">Hands</span>
+
+            <h5>Saba Heravi</h5>
+              <span class="work">still life of memories</span>
+
+            <h5>Chris Shimek</h5>
+              <span class="work"> Protective candle set (for long distance lovers)</span>
+
+            <h5>Laura Theresa MacNeil</h5>
+              <span class="work">Labour of Love</span>
+
+            <h5>Florence Yee</h5>
+              <span class="work">Trying</span>
+
+            <h5>Claudia Persechino</h5>
+              <span class="work">(de)restoration</span>
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 9</h5>
+      <h5>19h - 21h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 5 - Mar 18</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>M-F 12h -19h</h5>
+      <h5>Sat-Su 11h - 18h</h5>
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>Espace POP</h5>
+      <h5>5587 av. du Parc</h5>
+    </div>
+</section>
+</div>
+
+
+<!-- BOX SIX -->
+
+
+
+<div id="ex6" class="pink boxes" draggable="true" class="callz" >
+  <button id="ex6b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="title33">it’s all i have to bring today</h1>
+ <section class="exh" id="e6" class="maintext">
+    <div class ="excol1">
+      <p>
+Borrowing its title from the elusive Emily Dickinson, this exhibition brings together the diverse work of seven artists. Like her poetry, these works evolve as investigations of self, other and what lies between, exploring issues of isolation, struggle and emotionality. it’s all i have to bring today references an acceptance of weariness and need for self-preservation, challenging notions of contemporary productivity. From varying lived experiences, these artists come together in their search for comfort in discomfort, fullness in absence, strength in vulnerability. Thus, through the manipulation of the material world, they mediate new borders, creating space for stories which are less visible, or those which are simply more quiet in nature.
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curator</h4>
+        <h5>Alisa Haugen-Strand</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Audrey Bilodeau Fontaine </h5>
+            <span class="work">Trust Me</span>
+
+            <h5>Alyse Tunnell</h5>
+              <span class="work">Use to It</span>
+
+            <h5>Carmen Fox</h5>
+              <span class="work"> Float</span>
+
+            <h5>Danielle Beaudet </h5>
+              <span class="work">I wish I had been breastfed but it wasn’t in fashion at the time</span>
+
+            <h5>the Contractor</h5>
+              <span class="work">Snot & Tears</span>
+
+            <h5>Meredith Parent-Delgadillo</h5>
+              <span class="work">Mayra, Marlene, Sylvia, Meredith et Dora</span>
+
+            <h5>Sophie Wonfor</h5>
+              <span class="work">Here to be held and how else, when to be held is to be helped</span>
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 15</h5>
+      <h5>19h - 21h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 9 - Mar 24</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>Tu W 10h - 17h</h5>
+      <h5>Th 10h - 19h</h5>
+      <h5>F 10h - 17h </h5>
+      <h5>Sat 11h -16h</h5>
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>Studio XX</h5>
+      <h5>4001 rue Berri, Suite 201</h5>
+    </div>
+</section>
+</div>
+
+<!-- boxx seven -->
+
+
+
+<div id="ex7" class="pink boxes" draggable="true" class="callz" >
+  <button id="ex7b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="title9">Out of Balance</h1>
+ <section class="exh" id="e7" class="maintext">
+    <div class ="excol1">
+      <p>
+Being out of balance is to enter a state that has both generative and destructive potential. It is a potent state that ignites the imagination, but also one that is filled with fear, uncertainty and risk of failure. It forms a liminal space that, in the best case scenario, showcases human creativity and capacity to adapt and, in the worst case scenario, demonstrates our inability to deal with change. This duality of the state of imbalance creates a stereo image that can serve as a tool to better understand the complexity of the world we live in. Featuring a variety of media within an immersive space, Out of Balance brings together works of art that deal with themes such as growth and decay, ecosystemic balance and imbalances, consonance and dissonance, art and craft-making, modernity, technology, nationhood and identity, censorship, agency and freedom, consumerism and beauty, and urban chaos.
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curators</h4>
+        <h5>Alexey Lazarev</h5>
+        <h5>Manuel Poitras</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Julia Woldmo</h5>
+            <span class="work">First time human, long time being</span>
+
+            <h5>Diana Lazzaro </h5>
+              <span class="work">The World</span>
+
+            <h5>Colas Eko</h5>
+              <span class="work">Beau Grand Bateau</span>
+
+            <h5>Laura Hirsh, Ruth Johnstone and Van Le</h5>
+              <span class="work">Sensorship </span>
+
+            <h5>Maude Lauzière Dumas</h5>
+              <span class="work">Standards esthétiques</span>
+
+            <h5>Chloé St Arnaud</h5>
+            <span class="work">Parcae</span>
+
+            <h5>Joffré Roy-Beauregard </h5>
+            <span class="work">Excruciated</span>
+
+            <h5>Elisabeth Perrault</h5>
+            <span class="work">La Foule</span>
+
+            <h5>N. M. Ryan </h5>
+            <span class="work">Quartet (For Four Electric Guitars and Audience)</span>
+
+            <h5>Julie-Claude Vezeau-Croteau</h5>
+            <span class="work"> Hurly-Burly </span>
+
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 16</h5>
+      <h5>18h - 20h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 8 - Mar 18</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>M-Su 11h - 17h</h5>
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>Galerie Espace</h5>
+      <h5>4844 boul. Saint-Laurent</h5>
+    </div>
+</section>
+</div>
+
+<!-- box eight -->
+
+
+
+<div id="ex8" class="pink boxes" draggable="true" class="callz">
+  <button id="ex8b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="title9">The Art of Sinking </h1>
+ <section class="exh" id="e8" class="maintext">
+    <div class ="excol1">
+      <p>
+        The Art of Sinking is the art of the anti-climax. In this absurd world we live in, how do we attempt to navigate it when searching for answers only poses more questions? How do we come to terms with these unintentional failures and misfortunes? Do we make light of it? Do we look at it as progress, laugh at it, and ultimately turn the unintentional into intentional? Inspired by bathos, this exhibition explores the purpose of comedy in art, the subversion of its conventions, and the exaggeration or understatement of them.
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curators</h4>
+        <h5>Hannah Silver</h5>
+        <h5>Alexa Hawksworth</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Roxa Hy</h5>
+            <span class="work">Good Thing You’re Wearing Sunglasses
+            </span>
+
+            <h5>CubeAndre</h5>
+            <span class="work">Stephen Shore’s Diabetic Breakfast</span>
+
+            <h5>Kyla Kaplan-Chinard and Matisse ApSimon</h5>
+            <span class="work"> Mal-fun-ction</span>
+
+            <h5>Ben Compton</h5>
+            <span class="work">Long Distance</span>
+
+            <h5>Nickle Peace-Williams</h5>
+            <span class="work">Day 1 of The Interplanetary Dance Convention</span>
+
+            <h5>Roxanne Thibault </h5>
+            <span class="work">TBA</span>
+
+            <h5>Eva Young</h5>
+            <span class="work">TBA</span>
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 21</h5>
+      <h5>18h - 20h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 12 - Mar 24</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>M W Th Sat Su 11h - 17h</h5>
+      <h5>Tu F Closed</h5>
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>GHAM + DAFE </h5>
+      <h5>3425 rue Sainte Catherine E.</h5>
+    </div>
+</section>
+</div>
+
+<!-- box nine -->
+
+
+
+<div id="ex9" class="green boxes" draggable="true" class="callz" >
+  <button id="ex9b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="gh1">Art Crush in Time</h1>
+ <section class="exh" id="e9" class="maintext">
+    <div class ="excol1">
+      <p>
+How can visual art practices record and conserve the movement of the human body in space? Featuring the work of seven artists, Art Crush in Time focuses on the performative nature of mark-making. Through the exploration of a variety of notational systems in painting, sculpture and performance, the exhibition informs a corporeal understanding of human movement in places.
+</p>
+
+<p>The pieces selected reveal an emotional analysis of the dialogue between the body and the spatial constructions around it. By offering an intimate experience to the viewer, some artworks also visualize how built environments contain and direct behaviour in public, social spaces. The gallery is thus presented as a liminal place seeking a balance between individual constructivism, mark-making as a recording device, and the shared space.
+
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curators</h4>
+        <h5>Avery Zhao-Djokic</h5>
+        <h5>Marie Lemieux</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>liliesOfTheVallée (Emmanuelle Forgues and Sam Bourgault)</h5>
+            <span class="work">carcassesSolubles</span>
+
+            <h5>Jenna Ladd</h5>
+              <span class="work">Fragmented Body</span>
+
+            <h5>Owen Coolidge</h5>
+              <span class="work">Experimental Semantics</span>
+
+            <h5>Erin Berry</h5>
+              <span class="work">Lymph</span>
+
+            <h5>Maude Lauziere Dumas</h5>
+              <span class="work">Passage humain</span>
+
+              <h5>Paule Gilbert</h5>
+                <span class="work">Hall Building Escalators as Drawing Device</span>
+
+                <h5>Tina Lam</h5>
+                  <span class="work">Toujours, Imaginer sera plus grand que Vivre</span>
+
+
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Vernissage</h4>
+      <h5>Mar 22</h5>
+      <h5>18h - 21h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 16 - Mar 27</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>M-Su 12h - 19h</h5>
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>articule</h5>
+      <h5>262 av. Fairmount O.</h5>
+    </div>
+</section>
+</div>
+
+
+<!--box 10-->
+
+ <div id="ex10" class="pink boxes" draggable="true" class="callz" >
+  <button id="ex10b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="title9">pedagogy</h1>
+ <section class="exh" id="e10" class="maintext">
+    <div class ="excol1">
+      <p>
+We can learn from and through art. Often this takes place through educational programming which uses artworks as a platform for pedagogical activities. However, in doing so, art practices are differentiated from pedagogy, doing a disservice to the dynamic relationship which exists between the work, artist, curator and art-viewer/participant. This exhibition presents a host of works which emphasize acts of “learning” and pedagogical moments in artmaking itself, be they through creative research, experiences translated through media or through affective encounters. By bringing together artists, audiences and curators through various workshops,  the exhibition aims to focus and facilitate moments of dialogue, narrowing the presumed gap between learner and maker of knowledge.
+</p>
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+        <h4 class="extitle">Curators</h4>
+        <h5>Jamie Potvin</h5>
+        <h5>Chris Mendoza</h5>
+          <br>
+          <h4 class="extitle">Artists</h4>
+            <h5>Nick Cabelli</h5>
+            <span class="work">Native North American Industrial Fruit Dossier</span>
+
+            <h5>liliesOfTheVallée (Emma Forgues and Sam Bourgault) </h5>
+            <span class="work">prox.Dance</span>
+
+            <h5>Twothenone Collective (Magali Casaubon and Solana Del Bel Belluz)</h5>
+            <span class="work">Fresh Lemon, Awkward Shapes, and Two Heads</span>
+
+            <h5>Phil Mercier</h5>
+            <span class="work">Action</span>
+
+            <h5>Rayna Montague</h5>
+            <span class="work">The Travelling Conference Room</span>
+
+            <h5>Nathan Leblanc-Limoges</h5>
+            <span class="work">Sublime un à cinq ou autant de rectangles tatoués en huit heures chacun sur cinq personnes différentes
+            </span>
+
+            <h5>Alejandra Zamudio</h5>
+            <span class="work">Salir a la melcocha del mundo y la mierda voladora</span>
+
+
+
+    </div>
+     <div class ="exline"> </div>
+
+  <div class ="excol3">
+      <h4 class="extitle">Finissage</h4>
+      <h5>Mar 23</h5>
+      <h5>19h - 22h</h5>
+      <br>
+      <h4 class="extitle">Exhibition</h4>
+      <h5>Mar 14 - Mar 24</h5>
+      <br>
+      <h4 class="extitle">Opening Hours<h4/>
+      <h5>W - Sa 11h - 18h</h5>
+
+      <br>
+      <h4 class="extitle">Location</h4>
+      <h5>Espace Projet</h5>
+      <h5>353 rue Villeray</h5>
+    </div>
+</section>
+</div>
+
+
+
+
+</div>
+<!--end of outer ex box-->
+
+<div id="cal" class="pink boxes" draggable="true" class="callz" >
+ <button id="calb" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+<h1 class="title">CALENDAR</h1>
+<section class="exh" id="cal1" class="maintext">
+   <div class ="excol11">
+<img src="img/calendar.png">
+   </div>
+   <div class ="exline"> </div>
+   <div class ="excol12">
+          <h4 class="extitle">(Dis)CONNECT</h4>
+        <p>
+          Espace POP -
+          5587 av. du Parc
+          Vernissage:
+            <span class="vern">Mar 3</span> -&nbsp;&nbsp;
+            <span class="vern">19h - 1h</span>
+            Exhibition: Mar 3 19h-1h
+            Collaborators:
+            Nuit Blanche
+
+
+
+
+        ___________________________
+      </p>
+          <h4 class="extitle">BLUEPRINTS</h4>
+          <p>
+
+          VAV Gallery -
+        1395 boul. René Levesque O.
+        Vernissage:
+          <span class="vern">Mar 7</span> -&nbsp;&nbsp;
+          <span class="vern">18h - 21h</span>
+
+          Exhibition: Mar 5 – Mar 16
+          Opening Hours:
+          M–F, 9h–21h
+          Collaborators: Festival Art Souterrain
+
+
+            ___________________________
+        </p>
+
+        <h4 class="extitle">Tender Teeth</h4>
+        <p>
+        Mainline Gallery -
+        3905 boul. St Laurent
+        Vernissage:
+        <span class="vern">Mar 8</span>- &nbsp;&nbsp;
+        <span class="vern">19h - 21h</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        Exhibition:
+        Mar 6 - Mar 17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      Opening Hours:
+        M-Su 14h - 20h
+
+          ___________________________
+    </p>
+
+<h4 class="extitle">bookworks</h4>
+<p>
+      Mile-End Gallery-
+      5345 av. du Parc
+    Vernissage:
+    <span class="vern">Mar 9</span>&nbsp;&nbsp;
+    <span class="vern">18h - 20h</span>
+    Exhibition:
+    Mar 3 - Mar 17
+    Opening Hours:
+    Th - Su 14h - 19h
+      ___________________________
+
+  </p>
+  <h4 class="extitle">Myth Dealing</h4>
+
+<p>
+  Espace POP-
+  5587 av. du Parc
+Vernissage:
+  <span class="vern">Mar 9</span>&nbsp;&nbsp;
+  <span class="vern">19h - 21h</span>
+  Exhibition:
+  Mar 5 - Mar 18
+  Opening Hours:
+  M-F 12h - 19h&nbsp;&nbsp;&nbsp;&nbsp;
+  Sat-Su 11h - 18h
+    ___________________________
+</p>
+
+
+
+
+      </div>
+       <div class ="exline"> </div>
+
+    <div class ="excol13">
+
+      <h4 class="extitle">its all i have to bring today</h4>
+
+      <p>
+      Studio XX-
+      4001 rue Berri, Suite 201
+      Vernissage:
+      <span class"vern">Mar 15</span>&nbsp;&nbsp;
+      <span class="vern">19h - 21h</span>
+
+      Exhibition:
+      Mar 9 - Mar 24
+      Opening Hours:
+      Tu W 10h - 17h
+      Th 10h - 19h&nbsp;&nbsp;
+      F 10h - 17h&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Sat 11h -16h
+___________________________
+
+      </p>
+
+
+        <h4 class="extitle">Out of Balance</h4>
+
+        <p>
+
+                  Galerie Espace-
+                  4844 boul. Saint-Laurent
+                  Vernissage:
+                  <span class="vern">Mar 16</span>&nbsp;&nbsp;
+                  <span class="vern">18h - 20h</span>
+                Exhibition:
+                  Mar 8 - Mar 18
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  Opening Hours:
+                  M-Su 11h - 17h
+                  ___________________________
+
+
+        </p>
+
+
+
+
+          <h4 class="extitle">The Art of Sinking</h4>
+
+          <p>
+          GHAM + DAFE-
+          3425 rue Sainte Catherine E.
+          Vernissage:
+          <span class="vern">Mar 21</span>&nbsp;&nbsp;
+          <span class="vern">18h - 20h</span>
+          Exhibition:
+          Mar 12 - Mar 24
+          Opening Hours:
+          M W Th Sat Su 11h - 17h&nbsp;&nbsp;
+          Tu F Closed
+          ___________________________
+
+        </p>
+
+
+
+
+
+          <h4 class="extitle">Art Crush in Time</h4>
+          <p>
+          articule-
+          262 av. Fairmount O. Vernissage:
+          <span class="vern">Mar 22</span>&nbsp;&nbsp;
+          <span class="vern">18h - 21h</span>
+
+          Exhibition:
+          Mar 16 - Mar 27
+
+          Opening Hours:
+          M-Su 12h - 19h
+          ___________________________
+
+        </p>
+<h4 class="extitle">pedagogy</h4>
+<p>
+
+  Espace Projet-
+  353 rue Villeray
+  Finissage:
+  <span class="vern">Mar 23</span>&nbsp;&nbsp;
+  <span class="vern">19h - 22h</span>
+  Exhibition:
+  Mar 14 - Mar 24
+  Opening Hours:
+  W - Sat 11h - 18h
+
+
+</p>
+
+
+      </div>
+
+</section>
+</div>
+
+ <div id="ex11" class="pink boxes" draggable="true" class="callz" >
+  <button id="ex11b" class="cross1"><img src="img/icon.png" style="width:20px; height:20px"></button>
+ <h1 class="title12">MAP</h1>
+ <section class="exh" id="e11" class="maintext">
+    <div class ="excol1">
+<img src="img/map.png">
+    </div>
+ <div class ="exline"> </div>
+ <div class ="excol2">
+      <img src="img/map2.png">
+    </div>
+
+</section>
+</div>
+
+
+<!-- We include our own script file(s) -->
+  <script src="js/dots.js" content="text/javascript"></script>
+    <script src="js/simple.js" content="text/javascript"></script>
+
+    <div class="footer">
+
+
+        <h3>Welcome to the 18th edition of Art Matters Festival!&nbsp;March 3-27 Click EXHIBITIONS to find out more
+          &nbsp;&nbsp;&nbsp;
+
+ <!-- Click <a href="https://www.facebook.com/events/145142022831437/"><span>here<span></a> to find out more about (Dis)CONNECT: our kick-off exhibition happening during Nuit Blanche! -->
+
+</h3>
+  </div>
+
+
+
+
+</body>
+
+</html>
